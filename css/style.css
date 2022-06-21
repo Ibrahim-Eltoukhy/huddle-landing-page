@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  background-image: url(../images/bg-desktop.svg),
+    linear-gradient(hsl(257, 40%, 49%), hsl(257, 40%, 49%));
+  height: 100vh;
+}
+
+header {
+  margin-bottom: 32px;
+  padding: 32px 0;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+.logo img {
+  width: 200px;
+}
+
+.hero {
+  display: flex;
+  gap: 80px;
+}
+.hero-text {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+  margin-bottom: 32px;
+}
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+.btn:link,
+.btn:visited {
+  align-self: flex-start;
+  color: hsl(257, 40%, 49%);
+  display: inline-block;
+  padding: 16px 82px;
+  border-radius: 100px;
+  background-color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 8px 24px #37285b;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+}
+.social-icon {
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  margin-right: 20px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icon:hover {
+  color: hsl(300, 69%, 71%);
+  border: 1px solid hsl(300, 69%, 71%);
+}
+@media only screen and (max-width: 850px) {
+  .container {
+    width: 90%;
+  }
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .btn:link,
+  .btn:visited {
+    align-self: center;
+    margin-bottom: 30px;
+  }
+  .illustartion {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .illustartion img {
+    width: 100%;
+  }
+
+  .hero-text {
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+}
